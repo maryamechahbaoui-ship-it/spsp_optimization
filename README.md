@@ -1,7 +1,7 @@
 # Multi-Objective Optimization for Software Project Scheduling Problem (SPSP)
-## Research Internship Project — Model 2 Implementation using `pymoo`
+## Maryam Echahbaouiship Project — Model 2 Implementation using `pymoo`
 
-### 📌 Overview
+### Overview
 This repository contains the complete implementation and empirical benchmark suite for the **Multi-Objective Software Project Scheduling Problem (SPSP)** using Python and the `pymoo` framework.
 
 The project models software scheduling decisions under real-world operational constraints (skill profiles, task dependencies, developer experience levels, and availability windows) and evaluates candidate schedules across three competing objectives:
@@ -12,7 +12,7 @@ The project models software scheduling decisions under real-world operational co
 
 ---
 
-### 🧬 Key Mathematical & Algorithmic Features
+### Key Mathematical & Algorithmic Features
 
 * **$2N$ Decision Variable Vector Encoding:**
   $$x = [\underbrace{x_0, x_1, \dots, x_{N-1}}_{\text{Developer Assignments}}, \quad \underbrace{x_N, x_{N+1}, \dots, x_{2N-1}}_{\text{Task Start Delays}}]$$
@@ -37,7 +37,7 @@ The project models software scheduling decisions under real-world operational co
 
 ---
 
-### 📂 Repository Structure
+### Repository Structure
 ```text
 research internship _ SPSP/
 ├── README.md                              # Complete research documentation & user guide
@@ -46,7 +46,7 @@ research internship _ SPSP/
 
 ---
 
-### 🚀 Getting Started
+### Getting Started
 
 #### Prerequisites
 Ensure Python 3.10+ is installed along with the required libraries:
@@ -62,7 +62,7 @@ jupyter notebook SPSP_Multi_Objective_Optimization.ipynb
 
 ---
 
-### 📊 Benchmark Summary Findings
+### Benchmark Summary Findings
 1. **Convergence & Speed:** **MOPSO-CD** executes $\approx 22\%$ faster than NSGA-II by avoiding $O(MN^2)$ non-dominated sorting calls per generation.
 2. **Pareto Diversity:** **NSGA-II** achieves superior spread across the 3D objective trade-off surface.
 3. **Primary Trade-off:** Rushing project duration ($f_1 \approx 50$) stacks work onto senior developers ($f_2 \approx 6.0$), while balancing workloads ($f_2 \approx 1.3$) extends total project duration ($f_1 \approx 460$).
